@@ -40,7 +40,7 @@ sections:
     id: design
     content:
       title: MEDimages Workflow
-      text: "![](MEDimages-workflow.png)"
+      text: "![](https://github.com/MahdiAll99/medimages-website/blob/main/assets/media/MEDimages-Workflow.png?raw=true)"
   - block: features
     id: features
     content:
