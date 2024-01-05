@@ -6,15 +6,15 @@
 # Appearance
 appearance:
   mode: light
-  color: indigo
+  color: blue
 
 # SEO
 marketing:
   seo:
     site_type: Person
     local_business_type: ''
-    org_name: ''
-    description: 'A highly-customizable Hugo landing page theme powered by Hugo Blox website builder.'
+    org_name: 'MEDomics'
+    description: 'MEDimages package website.'
     twitter: 'GetResearchDev'
   analytics:
     google_analytics: ''
@@ -35,20 +35,20 @@ header:
     logo:
       text: ""
       # Logo filename in `assets/media/` folder
-      filename: "logo.svg"
+      filename: "MEDimage-Logo.png"
     button:
       enable: true
-      text: "Get Started"
-      url: "https://hugoblox.com/templates/"
+      text: "GitHub"
+      url: "https://github.com/MahdiAll99/MEDimage"
     show_search: true
     show_theme_chooser: true
 
 # Site footer
 footer:
   copyright:
-    notice: '© {year} My Company'
+    notice: '© {year} MEDomicsLab'
 
 # Localization
 locale:
-  date_format: 'Jan 2, 2006'
+  date_format: 'Jan 2, 2024'
   time_format: '3:04 PM'

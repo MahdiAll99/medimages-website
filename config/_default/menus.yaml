@@ -6,6 +6,9 @@ main:
   - name: Home
     url: /#top
     weight: 10
+  - name: Design
+    url: /#design
+    weight: 20
   - name: Features
     url: /#features
     weight: 20

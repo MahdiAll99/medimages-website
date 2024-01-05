@@ -1,84 +1,69 @@
 ---
-title: 🎉 Easily create your own simple yet highly customizable blog
-summary: Take full control of your personal brand and privacy by migrating away from the big tech platforms!
-date: 2023-10-27
+title: "🧠 Radiomics in medical imaging: A brief introduction"
+summary: A concise introduction to radiomics and a showcase of the typical workflow for radiomics analysis.
+date: 2023-03-05
 
 # Featured image
 # Place an image named `featured.jpg/png` in this page's folder and customize its options here.
 image:
-  caption: 'Image credit: [**Unsplash**](https://unsplash.com)'
+  caption: 'Image credit: [**Review on Radiomics for Brain Tumors**](https://med.stanford.edu/gevaertlab/ReviewRadiomicsBrain.html?tab=proxy)'
 
 authors:
-  - admin
-  - Ted
+  - Mahdi Loutfi
 
 tags:
-  - Academic
-  - Hugo Blox
-  - Markdown
+  - Radiomics
+  - Medical Imaging
+  - Cancer
+  - Python
+  - Machine Learning
 ---
 
 Welcome 👋
 
+The aim of the present blog is to give a brief introduction to radiomics and present a typical workflow of radiomics analysis.
+
 ## Overview
 
-1. The Hugo Blox website builder for Hugo, along with its starter templates, is designed for professional creators, educators, and teams/organizations - although it can be used to create any kind of site
-2. The template can be modified and customised to suit your needs. It's a good platform for anyone looking to take control of their data and online identity whilst having the convenience to start off with a **no-code solution (write in Markdown and customize with YAML parameters)** and having **flexibility to later add even deeper personalization with HTML and CSS**
-3. You can work with all your favourite tools and apps with hundreds of plugins and integrations to speed up your workflows, interact with your readers, and much more
+1. Radiomics is a technique for the quantitative description of multi-modal medical images.
+2. An overview on radiomics analysis typical workflow.
+3. Useful links and and open-source resources that can help enhance your understanding of radiomics.
 
 [//]: # ([![The template is mobile first with a responsive design to ensure that your site looks stunning on every device.]&#40;https://raw.githubusercontent.com/wowchemy/wowchemy-hugo-modules/main/starters/academic/preview.png&#41;]&#40;https://hugoblox.com&#41;)
 
-### Get Started
+### AI in medecine
 
-- 👉 [**Create a new site**](https://hugoblox.com/templates/)
-- 📚 [**Personalize your site**](https://docs.hugoblox.com/)
-- 💬 [Chat with the **Hugo Blox community**](https://discord.gg/z8wNYzb) or [**Hugo community**](https://discourse.gohugo.io)
-- 🐦 Twitter: [@GetResearchDev](https://twitter.com/GetResearchDev) [@GeorgeCushen](https://twitter.com/GeorgeCushen) #MadeWithHugoBlox
-- 💡 [Request a **feature** or report a **bug** for _Hugo Blox_](https://github.com/HugoBlox/hugo-blox-builder/issues)
-- ⬆️ **Updating Hugo Blox?** View the [Update Guide](https://docs.hugoblox.com/reference/update/) and [Release Notes](https://github.com/HugoBlox/hugo-blox-builder/releases)
+In recent decades, the medical industry has experienced a consistent rise in the digitization of clinical data. Additionally, the methods of artificial intelligence (AI) have become not powerful and accessible enough to put the focus on identifying the most relevant data and the information most likely to be helpful to solve a given issue. Consequently, there has been a substantial increase in AI applications in healthcare, with the aim of simplifying repetitive tasks clinicians encounter in their daily workflows and promoting the advancement of personalized medicine.
 
-## Crowd-funded open-source software
+Machine learning (ML) is a subset of AI with promising tools that can assist the medical field in tasks like classification, segmentation, and more. Deep learning (DL) is a specific branch of ML that involves using multiple layers of neural networks to detect and/or extract features in imagery. Most AI-based medical field tasks are conducted using DL algorithms. However, in the realm of ML-based classification of medical imaging data, radiomics is a well-established competitor to DL. When compared to DL, radiomics features are highly explainable since they are based on mathematical definitions. As a result, radiomics is highly capable of handling massive amounts of data in the medical field, with the goal of delivering precision medicine.
 
-To help us develop this template and software sustainably under the MIT license, we ask all individuals and businesses that use it to help support its ongoing maintenance and development via sponsorship.
+## What is radiomics?
 
-### [❤️ Click here to become a sponsor and help support Hugo Blox's future ❤️](https://hugoblox.com/sponsor/)
+Radiomics refers to the high-throughput quantitative image analysis which aims at extracting a large number of features characterizing a region of interest in the medical image. Radiomics analysis can be performed on medical images from different modalities, e.g., from from magnetic resonance imaging (MRI), computed tomography (CT), and positron-emission-tomography (PET). This approach enhances the existing data available to clinicians by quantifying the spatial distribution of signal intensities, voxels interrelationships and textural information.
 
-As a token of appreciation for sponsoring, you can **unlock [these](https://hugoblox.com/sponsor/) awesome rewards and extra features 🦄✨**
+### Radiomics typical workflow
 
-## Ecosystem
+The figure below demonstrates the necessary stages in a typical radiomics pipeline, emphasizing the crucial aspects of the radiomics analysis procedure.
 
-- **[Bibtex To Markdown](https://github.com/GetRD/academic-file-converter):** Automatically import publications from BibTeX
+![Radiomics typical workflow](https://miro.medium.com/v2/resize:fit:720/format:webp/1*N3OwjGfL6z0TasMeK0s6xg.png)
 
-## Inspiration
+- **Segmentation**: For every radiomics analysis, the region of interest (ROI) definition is crucial for the extraction of information from medical images. The images segmentation might be done manually by en expert or automatically using a deep learning model, such as [MONAI](https://monai.io/)’s model Swin UNETR.
 
-[Learn what other **creators**](https://hugoblox.com/creators/) are building with this template.
+![Segmentation](https://production-media.paperswithcode.com/thumbnails/task/1acce291-f809-41b2-b665-8ce57b31efb8.jpg)
 
-## Features
+- **Image processing**: Image processing comes after the segmentation step and before the feature extraction step. It aims to standardize images, from which radiomic features will be extracted, in terms of pixel spacing, gray-level intensities, histogram bins, etc. The main processing steps are: Interpolation, re-segmentation, ROI extraction and intensity discretization. Note that the image processing steps leading to features computation can be carried out in various ways, in terms of processing parameters. A separate blog post will be written specifically for the image processing steps.
 
-- **Page builder** - Create _anything_ with no-code [**blocks**](https://hugoblox.com/blocks/) and [**elements**](https://docs.hugoblox.com/reference/markdown/)
-- **Edit any type of content** - Blog posts, publications, talks, slides, projects, and more!
-- **Create content** in [**Markdown**](https://docs.hugoblox.com/reference/markdown/), [**Jupyter**](https://docs.hugoblox.com/getting-started/cms/), or [**RStudio**](https://docs.hugoblox.com/getting-started/cms/)
-- **Plugin System** - Fully customizable [**color** and **font themes**](https://docs.hugoblox.com/getting-started/customize/)
-- **Display Code and Math** - Code syntax highlighting and LaTeX math supported
-- **Integrations** - [Google Analytics](https://analytics.google.com), [Disqus commenting](https://disqus.com), Maps, Contact Forms, and more!
-- **Beautiful Site** - Simple and refreshing one-page design
-- **Industry-Leading SEO** - Help get your website found on search engines and social media
-- **Media Galleries** - Display your images and videos with captions in a customizable gallery
-- **Mobile Friendly** - Look amazing on every screen with a mobile friendly version of your site
-- **Multi-language** - 35+ language packs including English, 中文, and Português
-- **Multi-user** - Each author gets their own profile page
-- **Privacy Pack** - Assists with GDPR
-- **Stand Out** - Bring your site to life with animation, parallax backgrounds, and scroll effects
-- **One-Click Deployment** - No servers. No databases. Only files.
+![Image processing](https://miro.medium.com/v2/resize:fit:720/format:webp/1*Md-OJnazNB7bXKNXa_LZog.png)
 
-## Themes
+- **Features extraction**: Following image segmentation and processing, features can be extracted from the image. Feature extraction is the final processing step where feature descriptors are utilized to quantify characteristics of the grey levels within the ROI. The set of features can be classified into various families, including intensity-based statistical features, intensity histogram-based features, intensity-volume histogram-based features, morphological features, local intensity features, and texture matrix-based features. Each family has the potential to reveal tumoral patterns, size, shape, and textural characteristics that may not be discernible to the naked eye. Additionally, features can be computed on the base image, as well as from filtered images.
 
-Hugo Blox and its templates come with **automatic day (light) and night (dark) mode** built-in. Visitors can choose their preferred mode by clicking the sun/moon icon in the header.
+![Features extraction](https://miro.medium.com/v2/resize:fit:720/format:webp/1*Lm7_aUPWdE0YBuqPGh9R-Q.png)
 
-[Choose a stunning **theme** and **font**](https://docs.hugoblox.com/getting-started/customize/) for your site. Themes are fully customizable.
+## Useful links for radiomics
 
-## License
+- PyRadiomics package: https://github.com/AIM-Harvard/pyradiomics. 
+- MEDimage package: https://github.com/MahdiAll99/MEDimage.
+- Radiomics in medical imaging — “how-to” guide and critical reflection: https://doi.org/10.1186/s13244-020-00887-2.
+- IBSI: https://theibsi.github.io/.
 
-Copyright 2016-present [George Cushen](https://georgecushen.com).
-
-Released under the [MIT](https://github.com/HugoBlox/hugo-blox-builder/blob/main/LICENSE.md) license.
+[**Image references can be found here.**](https://medium.com/@mahdiall99/radiomics-in-medical-imaging-a-brief-introduction-3208863aae87)
