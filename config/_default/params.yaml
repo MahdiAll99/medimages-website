@@ -39,7 +39,7 @@ header:
     button:
       enable: true
       text: "GitHub"
-      url: "https://github.com/MahdiAll99/MEDimage"
+      url: "https://github.com/MEDomics-UdeS/medimage-app/"
     show_search: true
     show_theme_chooser: true
 

@@ -14,16 +14,16 @@ sections:
       text:  An open-source python package revolutionizing the processing of medical images and extracting radiomics features for enhanced insights.
       primary_action:
         text: Get Started
-        url: https://github.com/MahdiAll99/MEDimage
+        url: https://medomics-udes.gitbook.io/medimage-app-docs/quick-start
         icon: rocket-launch
       secondary_action:
         text: Read the docs
-        url: https://medimage.readthedocs.io/en/latest/
+        url: https://medomics-udes.gitbook.io/medimage-app-docs
       announcement:
-        text: Announcing the release of version 1.
+        text: Announcing the first release
         link:
-          text: Read more
-          url: https://github.com/MahdiAll99/MEDimage/releases
+          text: soon...
+          url: https://github.com/MEDomics-UdeS/medimage-app/releases
     design:
       spacing:
         padding: [0, 0, 0, 0]
@@ -69,7 +69,7 @@ sections:
           description: You're not a fan of coding? navigate the robust features of MEDimage using our intuitive interface app, eliminating the need for coding while ensuring powerful medical image analysis and radiomics extraction.
         - name: Versatile
           icon: rectangle-group
-          description: We provide a range of functionalities tailored to your requirements, encompassing image processing, feature extraction, model training, and analysis.
+          description: We provide a range of functionalities tailored to your requirements, encompassing feature extraction, model training, and automatic code generation of your experiments.
         - name: Resources
           icon: circle-stack
           description: The package provides diverse resources, including tutorials, code examples, and more, to aid users in getting acquainted with its functionalities.
@@ -103,7 +103,7 @@ sections:
           image: MEDimages-interface.png
           button:
             text: Get Started
-            url: https://github.com/MahdiAll99/MEDimage
+            url: https://github.com/MEDomics-UdeS/MEDimage-app/tree/develop
         # Tutorials
         - title: Resources
           text: We offer a range of resources to help you get started.
@@ -116,7 +116,7 @@ sections:
           image: MEDimages-resources.png
           button:
             text: Check our tutorials
-            url: https://medimage.readthedocs.io/en/latest/tutorials.html
+            url: https://youtube.com/playlist?list=PLEPy2VhC4-D5Eg-UxRyTtmUZRh-D5m_Ru&si=QnNFQe5-oRVHmoh8
           # Problems
         - title: Errors & Bugs
           text: For any errors or bugs, please report them to us. We will be happy to help.
@@ -124,7 +124,7 @@ sections:
           image: MEDimages-error.png
           button:
             text: Report an issue
-            url: https://github.com/MahdiAll99/MEDimage/issues
+            url: https://github.com/MEDomics-UdeS/medimage-app/issues
     design:
       css_class: "bg-gray-100 dark:bg-gray-900"
   - block: markdown
