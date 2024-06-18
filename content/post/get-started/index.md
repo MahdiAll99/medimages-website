@@ -61,9 +61,7 @@ The figure below demonstrates the necessary stages in a typical radiomics pipeli
 
 ## Useful links for radiomics
 
-- PyRadiomics package: https://github.com/AIM-Harvard/pyradiomics. 
-- MEDimage package: https://github.com/MahdiAll99/MEDimage.
 - Radiomics in medical imaging — “how-to” guide and critical reflection: https://doi.org/10.1186/s13244-020-00887-2.
 - IBSI: https://theibsi.github.io/.
 
-[**Image references can be found here.**](https://medium.com/@mahdiall99/radiomics-in-medical-imaging-a-brief-introduction-3208863aae87)
+[**All image references can be found here.**](https://medium.com/@mahdiall99/radiomics-in-medical-imaging-a-brief-introduction-3208863aae87)
