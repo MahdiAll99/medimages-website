@@ -14,11 +14,11 @@ sections:
       text:  An open-source python package revolutionizing the processing of medical images and extracting radiomics features for enhanced insights.
       primary_action:
         text: Get Started
-        url: https://medomics-udes.gitbook.io/medimage-app-docs/quick-start
+        url: https://medomics-udes.gitbook.io/medimage-app-docs
         icon: rocket-launch
       secondary_action:
-        text: Read the docs
-        url: https://medomics-udes.gitbook.io/medimage-app-docs
+        text: Explore utorials
+        url: https://youtube.com/playlist?list=PLEPy2VhC4-D5Eg-UxRyTtmUZRh-D5m_Ru&si=QnNFQe5-oRVHmoh8
       announcement:
         text: Announcing the first release
         link:
@@ -103,7 +103,7 @@ sections:
           image: MEDimages-interface.png
           button:
             text: Get Started
-            url: https://github.com/MEDomics-UdeS/MEDimage-app/tree/develop
+            url: https://medomics-udes.gitbook.io/medimage-app-docs/quick-start
         # Tutorials
         - title: Resources
           text: We offer a range of resources to help you get started.
@@ -115,8 +115,8 @@ sections:
           # Upload image to `assets/media/` and reference the filename here
           image: MEDimages-resources.png
           button:
-            text: Check our tutorials
-            url: https://youtube.com/playlist?list=PLEPy2VhC4-D5Eg-UxRyTtmUZRh-D5m_Ru&si=QnNFQe5-oRVHmoh8
+            text: Code documentation
+            url: https://medimage.readthedocs.io/en/latest/
           # Problems
         - title: Errors & Bugs
           text: For any errors or bugs, please report them to us. We will be happy to help.
