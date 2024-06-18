@@ -11,13 +11,13 @@ sections:
   - block: hero
     content:
       title: Open the World of Radiomics
-      text:  An open-source python package revolutionizing the processing of medical images and extracting radiomics features for enhanced insights.
+      text:  An all-in-one open-source software designed to enhance synergy between computer scientists and clinical researchers in the field of radiomics.
       primary_action:
         text: Get Started
         url: https://medomics-udes.gitbook.io/medimage-app-docs
         icon: rocket-launch
       secondary_action:
-        text: Explore utorials
+        text: Explore tutorials
         url: https://youtube.com/playlist?list=PLEPy2VhC4-D5Eg-UxRyTtmUZRh-D5m_Ru&si=QnNFQe5-oRVHmoh8
       announcement:
         text: Announcing the first release
