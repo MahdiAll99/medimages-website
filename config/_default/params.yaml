@@ -13,9 +13,8 @@ marketing:
   seo:
     site_type: Person
     local_business_type: ''
-    org_name: 'MEDomics'
+    org_name: 'MEDomics-Udes'
     description: 'MEDimages package website.'
-    twitter: 'GetResearchDev'
   analytics:
     google_analytics: ''
     baidu_tongji: ''

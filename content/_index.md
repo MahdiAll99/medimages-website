@@ -82,9 +82,9 @@ sections:
     content:
       title: MEDimage Workflow
       text: |
-        <div style="text-align: center;">
-          <img src="https://github.com/MahdiAll99/medimages-website/blob/main/assets/media/MEDimages-Workflow.png?raw=true" style="margin: 0px 5px 5px 0px; float: left; 
-            width:1000px; height: auto; border:0" alt="MEDimage Workflow" style="width: 1000px; height: auto;">
+        <div style="text-align: center">
+          <img src="https://github.com/MahdiAll99/medimages-website/blob/main/assets/media/MEDimages-Workflow.png?raw=true" style="max-width:none;
+            width:1500px; height: auto;" alt="MEDimage Workflow" style="width: 1000px; height: auto;">
         </div>
   
   - block: cta-image-paragraph
