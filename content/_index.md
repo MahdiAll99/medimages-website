@@ -56,33 +56,38 @@ sections:
     id: features
     content:
       title: Features
-      text: "Transforming Medical Images into Insightful Knowledge: Explore, Analyze, and Extract with MEDimage."
+      text: "Transforming medical images into insightful knowledge: explore, analyze, and extract with MEDimage."
       items:
-        - name: Automated
-          icon: wrench
-          description: Automated data processing, extraction of regions of interest (ROI), organization of metadata, and feature extraction.
         - name: Easy & Fast
           icon: sparkles
-          description: Effortlessly achieve rapid and efficient medical image processing, radiomics feature extraction, and coding with MEDimage, leveraging parallelization techniques to streamline the development of medical image analysis.
+          description: An all-in-one solution for medical image analysis that enables easy radiomics feature extraction and offers tailored functionalities for model training to streamline your experiments.
         - name: No-Code
           icon: code-bracket
-          description: You're not a fan of coding? navigate the robust features of MEDimage using our intuitive interface app, eliminating the need for coding while ensuring powerful medical image analysis and radiomics extraction.
-        - name: Versatile
-          icon: rectangle-group
-          description: We provide a range of functionalities tailored to your requirements, encompassing feature extraction, model training, and automatic code generation of your experiments.
-        - name: Resources
-          icon: circle-stack
-          description: The package provides diverse resources, including tutorials, code examples, and more, to aid users in getting acquainted with its functionalities.
+          description: You're not a fan of coding? the solution offers an intuitive interface, eliminating the need for coding.
         - name: Compliant
           icon: check-badge
           description: Our package adheres to the radiomics extraction international standards set by the [**IBSI**](https://theibsi.github.io/).
   
   - block: markdown
-    id: design
+    id: architecture
     content:
-      title: MEDimage Workflow
+      title: Software architecture
       text: |
         <div style="text-align: center">
+        <p> MEDimage solution for medical image analysis is based on two integral components, a <u><b><a href="https://github.com/MEDomics-UdeS/medimage-app/">code-free interface</a></b></u> and a <u><b><a href="https://github.com/MEDomics-UdeS/MEDimage">code-base package</a></u></b> to push for more synergy between inter-disciplinary teams. Using the code generation feature, users can transition between the two components. The global architecture of MEDimage is illustrated below. </p>
+        <br></br>
+          <img src="https://github.com/MahdiAll99/medimages-website/blob/main/assets/media/global_architecture.png?raw=true" style="max-width:none;
+            width:1700px; height: auto;" alt="MEDimage Workflow" style="width: 1000px; height: auto;">
+        </div>
+  
+  - block: markdown
+    id: design
+    content:
+      title: MEDimage package workflow
+      text: |
+        <div style="text-align: center">
+        <p> The following figure depicts the MEDimage <u><b><a href="https://github.com/MEDomics-UdeS/MEDimage">python package</a></u></b> architecture, a modular solution that ensures an easy manipulation and modification of the code.</p>
+        <br></br>
           <img src="https://github.com/MahdiAll99/medimages-website/blob/main/assets/media/MEDimages-Workflow.png?raw=true" style="max-width:none;
             width:1500px; height: auto;" alt="MEDimage Workflow" style="width: 1000px; height: auto;">
         </div>
@@ -109,14 +114,13 @@ sections:
           text: We offer a range of resources to help you get started.
           feature_icon: bolt
           features:
-            - "Comprehensive documentation website"
-            - "In-depth tutorials and code examples"
-            - "Guided video tutorials for step-by-step learning"
+            - "[**Comprehensive code documentation website**](https://medimage.readthedocs.io/)."
+            - "[**Comprehensive interface documentation website**](https://medomics-udes.gitbook.io/medimage-app-docs)."
+            - "[**Tutorials and code examples**](https://github.com/MEDomics-UdeS/MEDimage/tree/main/notebooks)"
+            - "[**Guided video tutorials for step-by-step learning**](https://www.youtube.com/playlist?list=PLEPy2VhC4-D5Eg-UxRyTtmUZRh-D5m_Ru)"
           # Upload image to `assets/media/` and reference the filename here
           image: MEDimages-resources.png
-          button:
-            text: Code documentation
-            url: https://medimage.readthedocs.io/en/latest/
+          
           # Problems
         - title: Errors & Bugs
           text: For any errors or bugs, please report them to us. We will be happy to help.
