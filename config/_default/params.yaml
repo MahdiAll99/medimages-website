@@ -35,10 +35,6 @@ header:
       text: ""
       # Logo filename in `assets/media/` folder
       filename: "MEDimage-Logo.png"
-    button:
-      enable: true
-      text: "GitHub"
-      url: "https://github.com/MEDomics-UdeS/medimage-app/"
     show_search: true
     show_theme_chooser: true
 
