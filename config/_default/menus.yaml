@@ -12,6 +12,9 @@ main:
   - name: Features
     url: /#features
     weight: 20
+  - name: Architecture
+    url: /#architecture
+    weight: 30
   - name: Solutions
     url: /#solutions
     weight: 30
